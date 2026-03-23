@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Accoria accessories with search, filters, wishlist, and add-to-cart features built for USA shoppers.">
+  <title>Shop | Accoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>New accessories edits land weekly for USA customers.</span>
+      <span>Search, like, and add to cart from one polished catalog.</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Accoria</span>
+        <span class="brand-note">USA Accessories Store</span>
+      </a>
+      <div class="nav-wrap" data-nav-wrap>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="services.html">Services</a>
+          <a href="faq.html">FAQ</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-tools">
+          <form class="search-form" data-search-form>
+            <input type="search" name="q" placeholder="Search Accoria">
+            <button class="icon-button" type="submit">Search</button>
+          </form>
+          <a class="pill-link" href="#wishlist">Liked <span data-wishlist-count>0</span></a>
+          <a class="pill-link" href="checkout.html">Cart <span data-cart-count>0</span></a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-card">
+      <p class="eyebrow">Shop all</p>
+      <h1>Accessories selected for gifting, styling, and everyday polish.</h1>
+      <p class="lead">Search by keyword or narrow the collection by category, drop type, color, size or length, and price to simulate a professional accessories storefront for the USA market.</p>
+    </div>
+  </section>
+
+  <main class="shop-layout">
+    <aside class="filter-panel">
+      <div>
+        <p class="eyebrow">Filters</p>
+        <h2 style="margin:0.4rem 0 0;">Shop Accoria</h2>
+      </div>
+      <form data-filter-form>
+        <div class="filter-group">
+          <label for="search">Search</label>
+          <input id="search" name="search" type="search" placeholder="Search product name">
+        </div>
+        <div class="filter-group">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">All categories</option>
+            <option value="Jewelry">Jewelry</option>
+            <option value="Bags">Bags</option>
+            <option value="Sunglasses">Sunglasses</option>
+            <option value="Watches">Watches</option>
+            <option value="Scarves">Scarves</option>
+            <option value="Small Leather Goods">Small Leather Goods</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="tag">Drop type</label>
+          <select id="tag" name="tag">
+            <option value="">All drops</option>
+            <option value="new">New</option>
+            <option value="trending">Trending</option>
+            <option value="bestseller">Best seller</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="color">Color / Finish</label>
+          <select id="color" name="color">
+            <option value="">All options</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="Tortoise">Tortoise</option>
+            <option value="Chestnut">Chestnut</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Emerald">Emerald</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="size">Size / Length</label>
+          <select id="size" name="size">
+            <option value="">All sizes</option>
+            <option value="One Size">One Size</option>
+            <option value="Adjustable">Adjustable</option>
+            <option value="16 in">16 in</option>
+            <option value="18 in">18 in</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="price">Price range</label>
+          <select id="price" name="price">
+            <option value="">All prices</option>
+            <option value="0-75">Under $75</option>
+            <option value="75-150">$75 to $150</option>
+            <option value="150-250">$150 to $250</option>
+          </select>
+        </div>
+      </form>
+    </aside>
+
+    <section>
+      <div class="toolbar">
+        <div>
+          <p class="eyebrow">Catalog</p>
+          <h2 style="margin:0.45rem 0 0;">Product grid</h2>
+        </div>
+        <div class="results-note" data-results-note>0 accessories available</div>
+      </div>
+      <div class="product-grid" data-shop-grid></div>
+
+      <section class="section" id="wishlist">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Liked products</p>
+            <h2>Saved wishlist pieces</h2>
+          </div>
+          <p>Customers can like products and revisit them later before checkout.</p>
+        </div>
+        <div class="product-grid" data-wishlist-grid></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-card"><strong>Accoria</strong><p>Refined accessories for the USA market.</p></div>
+      <div class="footer-card"><h3>Support</h3><div class="footer-links"><a href="help.html">Help</a><a href="returns.html">Return Policy</a><a href="payments.html">Payment Methods</a></div></div>
+      <div class="footer-card"><h3>Legal</h3><div class="footer-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a></div></div>
+      <div class="footer-card"><h3>Company</h3><div class="footer-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="feedback.html">Feedback</a></div></div>
+      <div class="footer-card"><h3>Contact</h3><div class="footer-links"><a href="contact.html">Contact Us</a><a href="faq.html">FAQ</a><a href="checkout.html">Checkout</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
